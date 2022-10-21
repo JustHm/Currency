@@ -137,7 +137,13 @@
                             <constraint firstItem="Dad-Ol-u7x" firstAttribute="leading" secondItem="0WH-eO-wKC" secondAttribute="leading" constant="12" id="sy9-VR-ldA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="환율 정보" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="sZD-bF-rbJ"/>
+                    <navigationItem key="navigationItem" title="환율 정보" largeTitleDisplayMode="always" id="sZD-bF-rbJ">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="qtX-4q-XaS">
+                            <connections>
+                                <action selector="addCurrencyList:" destination="f7t-sb-oZq" id="ITv-yQ-S6e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="currencyTableView" destination="iHi-eS-Rv2" id="3UK-96-pwh"/>
                     </connections>
@@ -145,6 +151,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhH-89-1ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="556.92307692307691" y="-132.22748815165878"/>
+        </scene>
+        <!--Add Currency View Controller-->
+        <scene sceneID="ZmI-h8-2Rx">
+            <objects>
+                <viewController storyboardIdentifier="AddCurrencyViewController" id="Ol1-nT-Kpb" customClass="AddCurrencyViewController" customModule="Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yjx-Tg-v0D">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJn-MA-els">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <items>
+                                    <navigationItem title="환율 정보 추가" id="FFa-ZG-LFP">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="r1s-De-BIH">
+                                            <connections>
+                                                <action selector="backButtonTap:" destination="Ol1-nT-Kpb" id="2fT-HU-XbQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="추가" id="DBB-j8-s2P">
+                                            <connections>
+                                                <action selector="addButtonTap:" destination="Ol1-nT-Kpb" id="6KV-zo-Hnm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aUw-XY-3lr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IJn-MA-els" firstAttribute="top" secondItem="aUw-XY-3lr" secondAttribute="top" id="Dju-G7-wCC"/>
+                            <constraint firstItem="IJn-MA-els" firstAttribute="leading" secondItem="aUw-XY-3lr" secondAttribute="leading" id="lTv-ld-7Vg"/>
+                            <constraint firstAttribute="trailing" secondItem="IJn-MA-els" secondAttribute="trailing" id="msN-6I-c1s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2g-sU-3ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-132"/>
         </scene>
         <!--Country List View-->
         <scene sceneID="yR8-R5-1h2">
@@ -191,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIS-rY-fBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408" y="-132"/>
+            <point key="canvasLocation" x="557" y="-805"/>
         </scene>
     </scenes>
     <resources>
@@ -13593,6 +13638,8 @@ SwAMQVAADEFdAAxBYAAMQW0ADEFyAAxBegAMQX0ADEGCAAxBigAAAAAAAAQBAAAAAAAAAFYAAAAAAAAA
 AAAAAAAADEGNA
 </mutableData>
         </image>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

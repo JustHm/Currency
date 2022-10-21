@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         
         self.view.addSubview(datePicker)
     }
+    @IBAction func addCurrencyList(_ sender: UIBarButtonItem) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "AddCurrencyViewController") as? AddCurrencyViewController else { return }
+        present(vc, animated: true)
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
