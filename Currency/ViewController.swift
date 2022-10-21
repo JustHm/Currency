@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        APIService.sharedObject.currencyCheck(to: "usd", from: "krw", date: Date(), completion: { result in
+            print(result.date)
+            print(result.target)
+        })
     }
 
 
 }
+
+
 
