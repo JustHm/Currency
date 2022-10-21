@@ -13,10 +13,3 @@ struct APIInfo {
     static let tail = ".json"
 }
 
-//struct APIList {
-//    static let krw = "/krw"
-//    static let jpy = "/jpy"
-//    static let usd = "/usd"
-//    static let eur = "/eur"
-//    static let aud = "/aud"
-//}

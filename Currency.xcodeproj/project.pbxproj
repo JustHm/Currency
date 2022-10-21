@@ -10,6 +10,10 @@
 		22A255CF29017E01004210EC /* APIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255CE29017E01004210EC /* APIInfo.swift */; };
 		22A255D129017E0A004210EC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255D029017E0A004210EC /* APIService.swift */; };
 		22A255D4290183EA004210EC /* CurrencyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255D3290183EA004210EC /* CurrencyInfo.swift */; };
+		22A255DA2902C7B3004210EC /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255D82902C7B3004210EC /* CurrencyTableViewCell.swift */; };
+		22A255DB2902C7B3004210EC /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */; };
+		22A255DD2902C991004210EC /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255DC2902C991004210EC /* CountryListView.swift */; };
+		22A255E02902C9DC004210EC /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255DF2902C9DC004210EC /* CountryList.swift */; };
 		22DA58072901758900F06C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA58062901758900F06C12 /* AppDelegate.swift */; };
 		22DA58092901758900F06C12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA58082901758900F06C12 /* SceneDelegate.swift */; };
 		22DA580B2901758900F06C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA580A2901758900F06C12 /* ViewController.swift */; };
@@ -23,6 +27,10 @@
 		22A255CE29017E01004210EC /* APIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInfo.swift; sourceTree = "<group>"; };
 		22A255D029017E0A004210EC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		22A255D3290183EA004210EC /* CurrencyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInfo.swift; sourceTree = "<group>"; };
+		22A255D82902C7B3004210EC /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		22A255DC2902C991004210EC /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		22A255DF2902C9DC004210EC /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
 		22DA58032901758900F06C12 /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DA58062901758900F06C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DA58082901758900F06C12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +57,29 @@
 			isa = PBXGroup;
 			children = (
 				22A255D029017E0A004210EC /* APIService.swift */,
-				22A255D3290183EA004210EC /* CurrencyInfo.swift */,
 				22A255CE29017E01004210EC /* APIInfo.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		22A255D72902C762004210EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22DA580A2901758900F06C12 /* ViewController.swift */,
+				22A255D82902C7B3004210EC /* CurrencyTableViewCell.swift */,
+				22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */,
+				22A255DC2902C991004210EC /* CountryListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22A255DE2902C9BF004210EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22A255D3290183EA004210EC /* CurrencyInfo.swift */,
+				22A255DF2902C9DC004210EC /* CountryList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		22DA57FA2901758900F06C12 = {
@@ -74,10 +101,11 @@
 		22DA58052901758900F06C12 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				22A255DE2902C9BF004210EC /* Model */,
+				22A255D72902C762004210EC /* View */,
 				22A255D229017E26004210EC /* Service */,
 				22DA58062901758900F06C12 /* AppDelegate.swift */,
 				22DA58082901758900F06C12 /* SceneDelegate.swift */,
-				22DA580A2901758900F06C12 /* ViewController.swift */,
 				22DA580C2901758900F06C12 /* Main.storyboard */,
 				22DA580F2901758A00F06C12 /* Assets.xcassets */,
 				22DA58112901758A00F06C12 /* LaunchScreen.storyboard */,
@@ -150,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A255DB2902C7B3004210EC /* CurrencyTableViewCell.xib in Resources */,
 				22DA58132901758A00F06C12 /* LaunchScreen.storyboard in Resources */,
 				22DA58102901758A00F06C12 /* Assets.xcassets in Resources */,
 				22DA580E2901758900F06C12 /* Main.storyboard in Resources */,
@@ -163,9 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A255DA2902C7B3004210EC /* CurrencyTableViewCell.swift in Sources */,
 				22A255D4290183EA004210EC /* CurrencyInfo.swift in Sources */,
 				22DA580B2901758900F06C12 /* ViewController.swift in Sources */,
+				22A255DD2902C991004210EC /* CountryListView.swift in Sources */,
 				22A255D129017E0A004210EC /* APIService.swift in Sources */,
+				22A255E02902C9DC004210EC /* CountryList.swift in Sources */,
 				22DA58072901758900F06C12 /* AppDelegate.swift in Sources */,
 				22A255CF29017E01004210EC /* APIInfo.swift in Sources */,
 				22DA58092901758900F06C12 /* SceneDelegate.swift in Sources */,
