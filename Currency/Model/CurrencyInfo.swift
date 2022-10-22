@@ -9,11 +9,11 @@ import Foundation
 
 struct CurrencyInfo: Codable {
     let date: String
-    let target: Double
+    let price: Float
     
     enum CodingKeys: String, CodingKey {
         case date
-        case target = "krw"
+        case price = "krw"
     }
 }
 

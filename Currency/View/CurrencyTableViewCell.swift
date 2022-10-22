@@ -12,6 +12,7 @@ class CurrencyTableViewCell: UITableViewCell {
     @IBOutlet weak var leftCurrencyField: UITextField!
     @IBOutlet weak var rightCountryLabel: UILabel!
     @IBOutlet weak var leftCountryLabel: UILabel!
+    var cellRow = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()

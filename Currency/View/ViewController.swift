@@ -23,11 +23,6 @@ class ViewController: UIViewController {
         
         let sharedNib = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
         currencyTableView.register(sharedNib, forCellReuseIdentifier: "CurrencyCell")
-        
-        APIService.sharedObject.currencyCheck(to: "usd", from: "krw", date: Date(), completion: { result in
-            print(result.date)
-            print(result.target)
-        })
     }
 
     @IBAction func changeDate(_ sender: UIButton) {
@@ -76,9 +71,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "CurrencyTable") as? CountryListView {
-//            navigationController?.present(vc, animated: true)
-//        }
+//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CurrencyTable") as? CountryListView else { return }
+//        navigationController?.present(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true

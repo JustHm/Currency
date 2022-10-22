@@ -8,16 +8,21 @@
 import UIKit
 
 class AddTableViewController: UITableViewController {
-
+    @IBOutlet weak var targetCountry: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func addButtonTap(_ sender: UIBarButtonItem) {
         let defaults = UserDefaults.standard
-        let temp: CurrencyCellInfo = CurrencyCellInfo(leftCountry: "KRW", rightCountry: "KRW", leftCurrency: 1000.12345, rightCurrency: 1234.123456)
-        currencyList.append(temp)
-        defaults.set(try? PropertyListEncoder().encode(currencyList), forKey: "CurrencyList")
-        navigationController?.popViewController(animated: true)
+        let toStr = targetCountry.text?.lowercased() ?? "usd"
+        APIService.sharedObject.currencyCheck(to: toStr, from: "krw", date: Date(), completion: { result in
+            let temp = CurrencyCellInfo(leftCountry: toStr.uppercased(), rightCountry: "KRW", leftCurrency: 1, rightCurrency: result.price)
+            currencyList.append(temp)
+            defaults.set(try? PropertyListEncoder().encode(currencyList), forKey: "CurrencyList")
+            self.navigationController?.popViewController(animated: true)
+        })
+        
     }
 
     // MARK: - Table view data source
@@ -29,7 +34,16 @@ class AddTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 2
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.row == 1  else { return }
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CountryListTableView") as? CountryListTableView else { return }
+        vc.sendProperty = { str in
+            self.targetCountry.text = str
+        }
+        navigationController?.present(vc, animated: true)
     }
 
     /*

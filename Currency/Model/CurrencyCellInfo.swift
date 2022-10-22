@@ -12,6 +12,6 @@ var currencyList: [CurrencyCellInfo] = []
 struct CurrencyCellInfo: Codable {
     var leftCountry: String
     var rightCountry: String
-    var leftCurrency: Double
-    var rightCurrency: Double
+    var leftCurrency: Float
+    var rightCurrency: Float
 }
