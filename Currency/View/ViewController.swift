@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         currencyTableView.layer.borderWidth = 1
         currencyTableView.layer.cornerRadius = 10
-        currencyTableView.layer.borderColor = UIColor.lightGray.cgColor
+        currencyTableView.layer.borderColor = UIColor.gray.cgColor
         currencyTableView.delegate = self
         currencyTableView.dataSource = self
         
@@ -31,18 +31,6 @@ class ViewController: UIViewController {
         
         let sharedNib = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
         currencyTableView.register(sharedNib, forCellReuseIdentifier: "CurrencyCell")
-    }
-
-    @IBAction func changeDate(_ sender: UIButton) {
-        let dateFrame = CGRect(x: 0, y: self.view.bounds.midY, width: self.view.bounds.width, height: 250)
-        let datePicker = UIDatePicker(frame: dateFrame)
-        datePicker.preferredDatePickerStyle = .inline
-        datePicker.backgroundColor = UIColor(cgColor: CGColor(gray: 0.9, alpha: 0.8))
-        datePicker.layer.cornerRadius = 10
-        datePicker.layer.masksToBounds = true //corner radius 적용
-        datePicker.datePickerMode = .date
-        
-        self.view.addSubview(datePicker)
     }
     
     @IBAction func showHelpPopUp(_ sender: UIButton) {
@@ -85,8 +73,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CurrencyTable") as? CountryListView else { return }
-//        navigationController?.present(vc, animated: true)
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CaculateViewController") as? CaculateViewController else { return }
+        
+        vc.leftStandard = currencyList[indexPath.row].leftCurrency
+        vc.rightStandard = currencyList[indexPath.row].rightCurrency
+        vc.leftCountry = currencyList[indexPath.row].leftCountry
+        vc.rightCountry = currencyList[indexPath.row].rightCountry
+        
+        navigationController?.present(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
