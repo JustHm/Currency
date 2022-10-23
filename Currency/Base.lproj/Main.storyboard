@@ -271,7 +271,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-eS-Rv2">
-                                <rect key="frame" x="24" y="123.33333333333331" width="342" height="604"/>
+                                <rect key="frame" x="0.0" y="123.33333333333331" width="390" height="604"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-Fl-Ab3">
@@ -295,10 +295,10 @@
                             <constraint firstItem="vZb-Fl-Ab3" firstAttribute="top" secondItem="iHi-eS-Rv2" secondAttribute="bottom" constant="12" id="3mz-eH-jUg"/>
                             <constraint firstItem="vZb-Fl-Ab3" firstAttribute="centerX" secondItem="0WH-eO-wKC" secondAttribute="centerX" id="ITR-gQ-07N"/>
                             <constraint firstItem="N5L-Qd-ZIg" firstAttribute="centerX" secondItem="0WH-eO-wKC" secondAttribute="centerX" constant="2" id="OQG-Kz-DPM"/>
-                            <constraint firstItem="iHi-eS-Rv2" firstAttribute="leading" secondItem="0WH-eO-wKC" secondAttribute="leading" constant="24" id="YVL-TL-jPk"/>
+                            <constraint firstItem="iHi-eS-Rv2" firstAttribute="leading" secondItem="0WH-eO-wKC" secondAttribute="leading" id="YVL-TL-jPk"/>
                             <constraint firstItem="iHi-eS-Rv2" firstAttribute="top" secondItem="N5L-Qd-ZIg" secondAttribute="bottom" constant="12" id="cXB-8l-ucH"/>
                             <constraint firstItem="N5L-Qd-ZIg" firstAttribute="top" secondItem="0WH-eO-wKC" secondAttribute="top" id="gIX-pX-w2u"/>
-                            <constraint firstItem="0WH-eO-wKC" firstAttribute="trailing" secondItem="iHi-eS-Rv2" secondAttribute="trailing" constant="24" id="nZA-qx-N1i"/>
+                            <constraint firstItem="0WH-eO-wKC" firstAttribute="trailing" secondItem="iHi-eS-Rv2" secondAttribute="trailing" id="nZA-qx-N1i"/>
                             <constraint firstItem="0WH-eO-wKC" firstAttribute="bottom" secondItem="vZb-Fl-Ab3" secondAttribute="bottom" constant="12" id="oqn-wd-NGQ"/>
                         </constraints>
                     </view>

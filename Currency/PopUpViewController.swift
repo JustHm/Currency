@@ -13,6 +13,7 @@ class PopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        uiView.layer.borderWidth = 2
         uiView.layer.cornerRadius = 10
         
     }
