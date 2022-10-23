@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         self.view.addSubview(datePicker)
     }
     
+    @IBAction func showHelpPopUp(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController else { return }
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true)
+    }
     private func loadCurrencyList() {
         do {
             if let data = UserDefaults.standard.value(forKey: "CurrencyList") as? Data {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222A1AE4290567AC00D11979 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A1AE3290567AC00D11979 /* PopUpViewController.swift */; };
 		2282B26C290407DC0025C7D0 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282B26B290407DC0025C7D0 /* AddTableViewController.swift */; };
 		2282B26E29041C1E0025C7D0 /* CountryListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2282B26D29041C1E0025C7D0 /* CountryListTableView.swift */; };
 		22A255CF29017E01004210EC /* APIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A255CE29017E01004210EC /* APIInfo.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		222A1AE3290567AC00D11979 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		2282B26B290407DC0025C7D0 /* AddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		2282B26D29041C1E0025C7D0 /* CountryListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryListTableView.swift; path = ../CountryListTableView.swift; sourceTree = "<group>"; };
 		22A255CE29017E01004210EC /* APIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInfo.swift; sourceTree = "<group>"; };
@@ -67,8 +69,8 @@
 		22A255D72902C762004210EC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22DA580A2901758900F06C12 /* ViewController.swift */,
 				22A255D82902C7B3004210EC /* CurrencyTableViewCell.swift */,
+				22DA580A2901758900F06C12 /* ViewController.swift */,
 				2282B26B290407DC0025C7D0 /* AddTableViewController.swift */,
 				2282B26D29041C1E0025C7D0 /* CountryListTableView.swift */,
 			);
@@ -110,6 +112,7 @@
 				22DA58082901758900F06C12 /* SceneDelegate.swift */,
 				22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */,
 				22DA580C2901758900F06C12 /* Main.storyboard */,
+				222A1AE3290567AC00D11979 /* PopUpViewController.swift */,
 				22DA580F2901758A00F06C12 /* Assets.xcassets */,
 				22DA58112901758A00F06C12 /* LaunchScreen.storyboard */,
 				22DA58142901758A00F06C12 /* Info.plist */,
@@ -198,6 +201,7 @@
 				22A255DA2902C7B3004210EC /* CurrencyTableViewCell.swift in Sources */,
 				2282B26C290407DC0025C7D0 /* AddTableViewController.swift in Sources */,
 				22A255D4290183EA004210EC /* CurrencyInfo.swift in Sources */,
+				222A1AE4290567AC00D11979 /* PopUpViewController.swift in Sources */,
 				22DA580B2901758900F06C12 /* ViewController.swift in Sources */,
 				22A255D129017E0A004210EC /* APIService.swift in Sources */,
 				22DA58072901758900F06C12 /* AppDelegate.swift in Sources */,

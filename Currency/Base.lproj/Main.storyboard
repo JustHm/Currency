@@ -165,7 +165,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tly-rT-OsM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007.6923076923076" y="-808.29383886255926"/>
+            <point key="canvasLocation" x="2234" y="-132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Df-GI-0FU">
@@ -176,12 +176,72 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="f7t-sb-oZq" kind="relationship" relationship="rootViewController" id="Tsb-mv-o0M"/>
+                        <segue destination="f7t-sb-oZq" kind="relationship" relationship="rootViewController" id="TQH-y1-y3N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOc-Ja-V8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-233" y="-131"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="Z9F-xr-wD9">
+            <objects>
+                <viewController storyboardIdentifier="PopUpViewController" id="ldG-9X-d5S" customClass="PopUpViewController" customModule="Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Web-sb-KWG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEi-Mm-Gys">
+                                <rect key="frame" x="24" y="178.66666666666663" width="342" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMU-DI-Bdl">
+                                        <rect key="frame" x="287.66666666666669" y="8" width="46.333333333333314" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="exitButtonTap:" destination="ldG-9X-d5S" eventType="touchUpInside" id="UL2-a3-0T6"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvs-1T-qed">
+                                        <rect key="frame" x="8" y="46.333333333333343" width="326" height="445.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">왼쪽 상단의 + 버튼을 이용해 환율 정보를 추가.
+
+오늘의 환율 화면에서 환율 정보를 선택해 계산 가능.
+
+*왼쪽에 표시되는 국가는 한국으로 고정입니다.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Yvs-1T-qed" secondAttribute="bottom" id="141-MJ-JRW"/>
+                                    <constraint firstItem="Yvs-1T-qed" firstAttribute="leading" secondItem="fEi-Mm-Gys" secondAttribute="leadingMargin" id="Hio-xu-ocV"/>
+                                    <constraint firstAttribute="height" constant="500" id="Z0w-AY-qTW"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kMU-DI-Bdl" secondAttribute="trailing" id="e6H-WQ-E8t"/>
+                                    <constraint firstItem="kMU-DI-Bdl" firstAttribute="top" secondItem="fEi-Mm-Gys" secondAttribute="topMargin" id="jY5-uU-SgX"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Yvs-1T-qed" secondAttribute="trailing" id="mFT-Y8-sdS"/>
+                                    <constraint firstItem="Yvs-1T-qed" firstAttribute="top" secondItem="kMU-DI-Bdl" secondAttribute="bottomMargin" constant="12" id="mpO-Ha-FfZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dYo-8v-umu"/>
+                        <constraints>
+                            <constraint firstItem="fEi-Mm-Gys" firstAttribute="centerY" secondItem="dYo-8v-umu" secondAttribute="centerY" id="Bdq-rk-Wze"/>
+                            <constraint firstItem="dYo-8v-umu" firstAttribute="trailing" secondItem="fEi-Mm-Gys" secondAttribute="trailing" constant="24" id="bb0-4d-xcA"/>
+                            <constraint firstItem="fEi-Mm-Gys" firstAttribute="leading" secondItem="dYo-8v-umu" secondAttribute="leading" constant="24" id="yuY-Zp-5yq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiView" destination="fEi-Mm-Gys" id="JTo-E7-c8x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4y2-v2-9F7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.92307692307691" y="-787.67772511848341"/>
         </scene>
         <!--오늘의 환율-->
         <scene sceneID="XO2-VS-MRf">
@@ -211,21 +271,19 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-eS-Rv2">
-                                <rect key="frame" x="24" y="135.33333333333337" width="342" height="580"/>
+                                <rect key="frame" x="24" y="123.33333333333331" width="342" height="604"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-Fl-Ab3">
-                                <rect key="frame" x="70" y="727.33333333333337" width="250" height="58.666666666666629"/>
+                                <rect key="frame" x="151.33333333333334" y="739.33333333333337" width="87.333333333333343" height="58.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rp-Fb-x94">
-                                        <rect key="frame" x="0.0" y="0.0" width="121" height="58.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="58.666666666666664"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="questionmark" catalog="system" imagePlacement="top" title="사용 방법" imagePadding="4"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIo-6v-pla">
-                                        <rect key="frame" x="129" y="0.0" width="121" height="58.666666666666664"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="hexagon" catalog="system" imagePlacement="top" title="위젯 설정 방법" imagePadding="4"/>
+                                        <connections>
+                                            <action selector="showHelpPopUp:" destination="f7t-sb-oZq" eventType="touchUpInside" id="hid-WQ-g3L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="tintColor" red="0.20000000000000001" green="0.62745098040000002" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -238,10 +296,10 @@
                             <constraint firstItem="vZb-Fl-Ab3" firstAttribute="centerX" secondItem="0WH-eO-wKC" secondAttribute="centerX" id="ITR-gQ-07N"/>
                             <constraint firstItem="N5L-Qd-ZIg" firstAttribute="centerX" secondItem="0WH-eO-wKC" secondAttribute="centerX" constant="2" id="OQG-Kz-DPM"/>
                             <constraint firstItem="iHi-eS-Rv2" firstAttribute="leading" secondItem="0WH-eO-wKC" secondAttribute="leading" constant="24" id="YVL-TL-jPk"/>
-                            <constraint firstItem="iHi-eS-Rv2" firstAttribute="top" secondItem="N5L-Qd-ZIg" secondAttribute="bottom" constant="24" id="cXB-8l-ucH"/>
+                            <constraint firstItem="iHi-eS-Rv2" firstAttribute="top" secondItem="N5L-Qd-ZIg" secondAttribute="bottom" constant="12" id="cXB-8l-ucH"/>
                             <constraint firstItem="N5L-Qd-ZIg" firstAttribute="top" secondItem="0WH-eO-wKC" secondAttribute="top" id="gIX-pX-w2u"/>
                             <constraint firstItem="0WH-eO-wKC" firstAttribute="trailing" secondItem="iHi-eS-Rv2" secondAttribute="trailing" constant="24" id="nZA-qx-N1i"/>
-                            <constraint firstItem="0WH-eO-wKC" firstAttribute="bottom" secondItem="vZb-Fl-Ab3" secondAttribute="bottom" constant="24" id="oqn-wd-NGQ"/>
+                            <constraint firstItem="0WH-eO-wKC" firstAttribute="bottom" secondItem="vZb-Fl-Ab3" secondAttribute="bottom" constant="12" id="oqn-wd-NGQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="오늘의 환율" id="sZD-bF-rbJ">
@@ -390,14 +448,20 @@
     </scenes>
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="hexagon" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="questionmark" catalog="system" width="94" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
