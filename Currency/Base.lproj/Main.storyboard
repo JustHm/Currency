@@ -20,20 +20,20 @@
                             <tableViewSection headerTitle="국가 선택" id="ANr-pr-ezk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2c7-YZ-udn">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="43"/>
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2c7-YZ-udn" id="R7M-yv-7Au">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇰🇷 대한민국" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEz-in-u12">
-                                                    <rect key="frame" x="20" y="11" width="86.333333333333329" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="86.333333333333329" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 선택됨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-hq-dS6">
-                                                    <rect key="frame" x="118.33333333333333" y="11" width="55.333333333333329" height="21"/>
+                                                    <rect key="frame" x="118.33333333333333" y="11.000000000000002" width="55.333333333333329" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,14 +50,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lH2-e3-hdU">
-                                        <rect key="frame" x="0.0" y="93" width="390" height="43"/>
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lH2-e3-hdU" id="7hE-Rc-qyY">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸 미국" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peS-eq-oVc">
-                                                    <rect key="frame" x="20" y="11" width="57" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="57" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -71,14 +71,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fdA-nZ-LdA">
-                                        <rect key="frame" x="0.0" y="136" width="390" height="43.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdA-nZ-LdA" id="0ZJ-22-cc9">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="42.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇪🇺 유럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eh-cq-H0o">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="57" height="21.333333333333329"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="57" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -92,14 +92,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EEw-D8-h8B">
-                                        <rect key="frame" x="0.0" y="179.33333206176758" width="390" height="43"/>
+                                        <rect key="frame" x="0.0" y="180.00000381469727" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EEw-D8-h8B" id="oaf-ej-Idg">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇯🇵 일본" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtZ-ym-pDH">
-                                                    <rect key="frame" x="20" y="11" width="57" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="57" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -113,14 +113,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GNq-cc-bB1">
-                                        <rect key="frame" x="0.0" y="222.33333206176758" width="390" height="43"/>
+                                        <rect key="frame" x="0.0" y="223.66667175292969" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GNq-cc-bB1" id="HWg-O6-gKe">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇦🇺 호주" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-RQ-5iN">
-                                                    <rect key="frame" x="20" y="11" width="57" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="57" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -134,14 +134,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Cbh-ZF-jjh">
-                                        <rect key="frame" x="0.0" y="265.33333206176758" width="390" height="43.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="267.33333969116211" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cbh-ZF-jjh" id="hja-5O-NRo">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="42.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇳🇿 뉴질랜드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-cH-EJN">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="87" height="21.333333333333329"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="87" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -174,7 +174,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gu-wq-gcU">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="f7t-sb-oZq" kind="relationship" relationship="rootViewController" id="Tsb-mv-o0M"/>
@@ -245,7 +244,7 @@
                             <constraint firstItem="0WH-eO-wKC" firstAttribute="bottom" secondItem="vZb-Fl-Ab3" secondAttribute="bottom" constant="24" id="oqn-wd-NGQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="오늘의 환율" largeTitleDisplayMode="always" id="sZD-bF-rbJ">
+                    <navigationItem key="navigationItem" title="오늘의 환율" id="sZD-bF-rbJ">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="qtX-4q-XaS">
                             <connections>
                                 <segue destination="IWo-zk-dBB" kind="show" id="A4z-Y3-ji8"/>
@@ -254,6 +253,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="currencyTableView" destination="iHi-eS-Rv2" id="3UK-96-pwh"/>
+                        <outlet property="todayLabel" destination="TMS-zG-U4Y" id="uVj-cm-PUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhH-89-1ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -268,10 +268,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="VMp-8P-Izw">
+                            <rect key="frame" x="0.0" y="163.33333587646484" width="390" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <sections>
                             <tableViewSection headerTitle="설정" footerTitle="-" id="0AQ-Cq-rUS">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="atl-V6-EgJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countrySetting" id="atl-V6-EgJ">
                                         <rect key="frame" x="0.0" y="50" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atl-V6-EgJ" id="moQ-vl-sLb">
@@ -321,7 +325,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nlg-c7-19Q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countrySetting" id="Nlg-c7-19Q">
                                         <rect key="frame" x="0.0" y="92.666667938232422" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nlg-c7-19Q" id="cff-Gx-qzw">
@@ -359,14 +363,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="a2B-Dx-P3t">
-                                        <rect key="frame" x="0.0" y="135.33333587646484" width="390" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a2B-Dx-P3t" id="0Z9-eP-wZi">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -375,7 +371,7 @@
                             <outlet property="delegate" destination="IWo-zk-dBB" id="X9d-hT-AuA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="환율 정보" id="8AD-bh-rdh">
+                    <navigationItem key="navigationItem" title="환율 정보" largeTitleDisplayMode="never" id="8AD-bh-rdh">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Fx4-vu-3qG">
                             <connections>
                                 <action selector="addButtonTap:" destination="IWo-zk-dBB" id="ajS-VV-rfU"/>
@@ -383,6 +379,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="indicator" destination="VMp-8P-Izw" id="30s-Ug-Tzx"/>
                         <outlet property="targetCountry" destination="VAJ-kW-hO6" id="Cyg-7R-6N6"/>
                     </connections>
                 </tableViewController>

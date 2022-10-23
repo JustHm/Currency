@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var todayLabel: UILabel!
     @IBOutlet weak var currencyTableView: UITableView!
-//    private var currencyList: [CurrencyCellInfo] = []
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         currencyTableView.reloadData()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd"
+        todayLabel.text = formatter.string(from: Date())
     }
 
     override func viewDidLoad() {
@@ -64,13 +68,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.leftCountryLabel.text = currencyInfo.leftCountry
         cell.rightCountryLabel.text = currencyInfo.rightCountry
-        cell.rightCurrencyField.text = "\(currencyInfo.rightCurrency)"
-        cell.leftCurrencyField.text = "\(currencyInfo.leftCurrency)"
+        cell.leftCurrencyField.text = String(format: "%.2f ", currencyInfo.leftCurrency) + currencyInfo.leftCountry
+        cell.rightCurrencyField.text = String(format: "%.2f ", currencyInfo.rightCurrency) + currencyInfo.rightCountry
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
 //        guard let vc = storyboard?.instantiateViewController(withIdentifier: "CurrencyTable") as? CountryListView else { return }
 //        navigationController?.present(vc, animated: true)
     }
@@ -91,7 +96,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             break
         }
     }
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

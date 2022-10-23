@@ -69,7 +69,6 @@
 			children = (
 				22DA580A2901758900F06C12 /* ViewController.swift */,
 				22A255D82902C7B3004210EC /* CurrencyTableViewCell.swift */,
-				22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */,
 				2282B26B290407DC0025C7D0 /* AddTableViewController.swift */,
 				2282B26D29041C1E0025C7D0 /* CountryListTableView.swift */,
 			);
@@ -109,6 +108,7 @@
 				22A255D229017E26004210EC /* Service */,
 				22DA58062901758900F06C12 /* AppDelegate.swift */,
 				22DA58082901758900F06C12 /* SceneDelegate.swift */,
+				22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */,
 				22DA580C2901758900F06C12 /* Main.storyboard */,
 				22DA580F2901758A00F06C12 /* Assets.xcassets */,
 				22DA58112901758A00F06C12 /* LaunchScreen.storyboard */,

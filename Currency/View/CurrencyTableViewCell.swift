@@ -16,6 +16,9 @@ class CurrencyTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        leftCurrencyField.isEnabled = false
+        rightCurrencyField.isEnabled = false
     }
     
     private func getCurrencyInfo(to: String, from: String) {
