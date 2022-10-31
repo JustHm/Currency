@@ -21,9 +21,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        currencyTableView.layer.borderWidth = 1
-        currencyTableView.layer.cornerRadius = 10
-        currencyTableView.layer.borderColor = UIColor.gray.cgColor
         currencyTableView.delegate = self
         currencyTableView.dataSource = self
         
