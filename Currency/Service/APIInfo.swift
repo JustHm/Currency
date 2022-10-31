@@ -8,7 +8,7 @@
 import Foundation
 // "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/jpy/krw.json"
 struct APIInfo {
-    static let host = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/"
+    static let host = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/"
     static let path = "/currencies"
     static let tail = ".json"
 }

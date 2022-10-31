@@ -24,10 +24,11 @@ class AddTableViewController: UITableViewController {
         
         let defaults = UserDefaults.standard
         let toStr = targetCountry.text?.lowercased() ?? "usd"
-        APIService.sharedObject.currencyCheck(to: toStr, from: "krw", date: Date(), completion: { result in
+        APIService.sharedObject.currencyCheck(to: toStr, from: "krw", completion: { result in
             let temp = CurrencyCellInfo(leftCountry: toStr.uppercased(), rightCountry: "KRW", leftCurrency: 1, rightCurrency: result.price)
             currencyList.append(temp)
             defaults.set(try? PropertyListEncoder().encode(currencyList), forKey: "CurrencyList")
+            defaults.set(Date(), forKey: "CurrentDate")
             self.navigationController?.popViewController(animated: true)
         })
     }

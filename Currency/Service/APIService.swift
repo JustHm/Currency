@@ -16,8 +16,8 @@ class APIService {
         return format
     }()
     
-    func currencyCheck(to: String, from: String, date: Date, completion: @escaping (CurrencyInfo)->Void) {
-        let url = APIInfo.host + dateFormatter.string(from: date) + APIInfo.path + "/" + to + "/" + from + APIInfo.tail
+    func currencyCheck(to: String, from: String, completion: @escaping (CurrencyInfo)->Void) {
+        let url = APIInfo.host + APIInfo.path + "/" + to + "/" + from + APIInfo.tail
         
         AF.request(url, method: .get)
             .validate(statusCode: 200..<300)

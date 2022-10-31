@@ -44,6 +44,15 @@ class ViewController: UIViewController {
                 let list = try PropertyListDecoder().decode([CurrencyCellInfo].self, from: data)
                 currencyList = list
             }
+            // Load 이후 어제 날짜의 환율이라면 데이터를 갱신한다.
+            if let lastDate = UserDefaults.standard.value(forKey: "CurrentDate") as? Date {
+                let lastDay = Calendar.current.dateComponents([.day], from: lastDate)
+                let currentDay = Calendar.current.dateComponents([.day], from: Date())
+                if lastDay != currentDay {
+                    //저장되어 있는 데이터 갱신
+                    updateCurrencyList()
+                }
+            }
         } catch {
             print("HM: CurrencyList Load Fail")
         }
@@ -51,6 +60,17 @@ class ViewController: UIViewController {
     private func saveCurrencyList() {
         let defaults = UserDefaults.standard
         defaults.set(try? PropertyListEncoder().encode(currencyList), forKey: "CurrencyList")
+    }
+    private func updateCurrencyList() {
+        print("update List")
+        for (index, item) in currencyList.enumerated() {
+            APIService.sharedObject.currencyCheck(to: item.leftCountry.lowercased(), from: item.rightCountry.lowercased(), completion: { result in
+                currencyList[index].rightCurrency = result.price
+            })
+        }
+        // 업데이트 날짜 갱신
+        UserDefaults.standard.set(Date(), forKey: "CurrentDate")
+        saveCurrencyList()
     }
 }
 
