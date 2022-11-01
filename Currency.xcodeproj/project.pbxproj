@@ -109,9 +109,9 @@
 		22DA58052901758900F06C12 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				22A255D229017E26004210EC /* Service */,
 				22A255DE2902C9BF004210EC /* Model */,
 				22A255D72902C762004210EC /* View */,
-				22A255D229017E26004210EC /* Service */,
 				22DA58062901758900F06C12 /* AppDelegate.swift */,
 				22DA58082901758900F06C12 /* SceneDelegate.swift */,
 				22A255D92902C7B3004210EC /* CurrencyTableViewCell.xib */,

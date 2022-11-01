@@ -24,16 +24,26 @@ class CaculateViewController: UIViewController {
         rightField.text = "\(rightStandard)"
         leftLabel.text = leftCountry
         rightLabel.text = rightCountry
+        
+        leftField.addTarget(self, action: #selector(leftFieldChanged), for: .editingChanged)
+        rightField.addTarget(self, action: #selector(rightFieldChanged), for: .editingChanged)
     }
     private func caculateCurrency(changed: String, isKRW: Bool) -> Float {
         let money = Float(changed) ?? 1.0
-        if isKRW {
-            return  money * leftStandard
-        } else {
+        if isKRW { // KRW -> Target
+            return  money / rightStandard
+        } else { // Target -> KRW
             return money * rightStandard
         }
     }
-    
+    @objc func leftFieldChanged() {
+        let result = caculateCurrency(changed: leftField.text ?? "0", isKRW: false)
+        rightField.text = "\(result)"
+    }
+    @objc func rightFieldChanged() {
+        let result = caculateCurrency(changed: rightField.text ?? "0", isKRW: true)
+        leftField.text = "\(result)"
+    }
     @IBAction func backButtonTap(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
     }
@@ -43,3 +53,4 @@ class CaculateViewController: UIViewController {
         rightField.resignFirstResponder()
     }
 }
+
